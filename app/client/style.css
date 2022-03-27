@@ -1,0 +1,5 @@
+/*noinspection ALL*/
+.digits-landing-background {
+  background: url('images/digits.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
