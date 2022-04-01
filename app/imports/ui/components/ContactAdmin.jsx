@@ -22,7 +22,7 @@ class ContactAdmin extends React.Component {
         </Card.Content>
         <Card.Content extra>
           {this.props.contact.owner}
-         </Card.Content>
+        </Card.Content>
       </Card>
     );
   }
