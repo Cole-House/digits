@@ -34,7 +34,7 @@ ListContactsAdmin.propTypes = {
 
 // withTracker connects Meteor data to React components. https://guide.meteor.com/react.html#using-withTracker
 export default withTracker(() => {
-  // Get access to Contacts documents through subscription
+  // Get access to Notes documents through subscription
   const subscription = Meteor.subscribe(Contacts.adminPublicationName);
   // Determine if the subscription is ready
   const ready = subscription.ready();
