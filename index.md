@@ -5,7 +5,7 @@ Digits is a localized web application that allows users to:
 * Create and manage set of contacts 
 * Add a set of timestamped notes regarding their interactions with each contact.
 
-#Installation
+##Installation
 
 Installation
 First, install Meteor.
@@ -66,4 +66,33 @@ Lastly, you can run ESLint over the code in the imports/ directory with:
 
 meteor npm run lint
 
+##User-Interface Walkthrough
+
+Landing Page:
+- Upon starting up the application, the lanfing page will display the capabilities of the _digits_ app and a navbar nearing the top of the page with a login dropdown.
+
+<img src="doc/landing-page.png">
+
+Register
+If you do not yet have an account on the system, you can register by clicking on “Login”, then “Sign Up”:
+
+Sign in
+Click on the Login link, then click on the Signin link to bring up the Sign In page which allows you to login with your appropriate information:
+
+User home page
+After successfully logging in, the system takes you to your home page. It is just like the landing page, but the NavBar contains links to list contact and add new contacts:
+
+List Contacts
+Clicking on the List Contacts link brings up a page that lists all of the contacts associated with the logged in user:
+
+This page also allows the user to add timestamped “notes” detailing interactions they’ve had with the Contact. For example:
+
+Add Contact
+Clicking on the Add Contact link will bring up a form for the user to fill out with information in the appropraite fields to create a new Contact that will then appear in their list of contacts:
+
+Edit Contacts
+From the List Contacts page, the user can click the “Edit” link associated with any Contact to bring up a page with a form that allows that specific Contact information to be edited:
+
+Admin mode
+It is possible to designate one or more users as “Admins” through the settings file. When a user has the Admin role, they get access to a special NavBar link that retrieves a page listing all Contacts associated with all users:
 
