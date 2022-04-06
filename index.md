@@ -23,29 +23,46 @@ The first time you run the app, it will create some default users and data. Here
 meteor npm run start
 
 > meteor-application-template-react@ start /Users/philipjohnson/github/philipmjohnson/digits/app
+
 > meteor --no-release-check --settings ../config/settings.development.json
 
 [[[[[ ~/github/philipmjohnson/digits/app ]]]]]
 
 => Started proxy.                             
-=> Started MongoDB.                           
+=> Started MongoDB.
+
 I20180305-18:06:02.764(-10)? Creating the default user(s)
+
 I20180305-18:06:02.803(-10)?   Creating user admin@foo.com.
+
 I20180305-18:06:02.803(-10)?   Creating user john@foo.com.
+
 I20180305-18:06:02.804(-10)? Creating default contacts.
+
 I20180305-18:06:02.804(-10)?   Adding: Johnson (john@foo.com)
+
 I20180305-18:06:02.804(-10)?   Adding: Casanova (john@foo.com)
+
 I20180305-18:06:02.804(-10)?   Adding: Binsted (admin@foo.com)
+
 => Started your app.
 
 => App running at: http://localhost:3000/
+
 W20180305-18:06:02.805(-10)? (STDERR) Note: you are using a pure-JavaScript implementation of bcrypt.
+
 W20180305-18:06:02.805(-10)? (STDERR) While this implementation will work correctly, it is known to be
+
 W20180305-18:06:02.806(-10)? (STDERR) approximately three times slower than the native implementation.
+
 W20180305-18:06:02.806(-10)? (STDERR) In order to use the native implementation instead, run
+
 W20180305-18:06:02.806(-10)? (STDERR) 
+
 W20180305-18:06:02.806(-10)? (STDERR)   meteor npm install --save bcrypt
+
 W20180305-18:06:02.806(-10)? (STDERR) 
+
 W20180305-18:06:02.806(-10)? (STDERR) in the root directory of your application.
 
 Note regarding bcrypt warning. You will also get the following message when you run this application:
@@ -58,6 +75,7 @@ In order to use the native implementation instead, run
   meteor npm install --save bcrypt
 
 in the root directory of your application.
+
 On some operating systems (particularly Windows), installing bcrypt is much more difficult than implied by the above message. Bcrypt is only used in Meteor for password checking, so the performance implications are negligible until your site has very high traffic. You can safely ignore this warning without any problems during initial stages of development.
 
 If all goes well, the template application will appear at http://localhost:3000. You can login using the credentials in settings.development.json, or else register a new account.
@@ -74,25 +92,32 @@ Landing Page:
 <img src="doc/landing-page.png">
 
 Register
+
 If you do not yet have an account on the system, you can register by clicking on “Login”, then “Sign Up”:
 
 Sign in
+
 Click on the Login link, then click on the Signin link to bring up the Sign In page which allows you to login with your appropriate information:
 
 User home page
+
 After successfully logging in, the system takes you to your home page. It is just like the landing page, but the NavBar contains links to list contact and add new contacts:
 
 List Contacts
+
 Clicking on the List Contacts link brings up a page that lists all of the contacts associated with the logged in user:
 
 This page also allows the user to add timestamped “notes” detailing interactions they’ve had with the Contact. For example:
 
 Add Contact
+
 Clicking on the Add Contact link will bring up a form for the user to fill out with information in the appropraite fields to create a new Contact that will then appear in their list of contacts:
 
 Edit Contacts
+
 From the List Contacts page, the user can click the “Edit” link associated with any Contact to bring up a page with a form that allows that specific Contact information to be edited:
 
 Admin mode
+
 It is possible to designate one or more users as “Admins” through the settings file. When a user has the Admin role, they get access to a special NavBar link that retrieves a page listing all Contacts associated with all users:
 
