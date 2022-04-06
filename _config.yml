@@ -1,7 +1,7 @@
 title: digits
-description: A loclaized web app to create and manage new contacts.
+description: A localized web app to create and manage new contacts.
 google_analytics:
-show_downloads: true
+show_downloads: false
 theme: jekyll-theme-cayman
 
 gems:
