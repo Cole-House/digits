@@ -30,6 +30,6 @@ class ContactsCollection {
 
 /**
  * The singleton instance of the ContactsCollection.
- * @type {StuffsCollection}
+ * @type {ContactsCollection}
  */
 export const Contacts = new ContactsCollection();
